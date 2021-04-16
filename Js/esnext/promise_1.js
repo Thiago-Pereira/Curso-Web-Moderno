@@ -1,8 +1,10 @@
-let p = new Promise(function(cumprirPromessa) {
-    cumprirPromessa({
-        x: 3,
-        y: 4
-    })
-}) 
+const primeiroElemento = arrayOuString =>  arrayOuString[0]
+const letraMinuscula = letra => letra.toLowerCase()
 
-p.then(valor => console.log(valor))
+let p = new Promise(function(resolve) {
+    resolve(['Ana', 'Bia', 'Carlos', 'Daniel'])
+})
+    .then(primeiroElemento)
+    .then(primeiroElemento)
+    .then(letraMinuscula)
+    .then(console.log)
