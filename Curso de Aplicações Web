@@ -8,3 +8,5 @@ variável é visivel em todo o escopo do código. Porém quando vc define dentro
 
 hoisting: vc chamou a variável declarada com var antes da declaração da mesma, o js declara ela no começo do código (lembrando variável estática) mas sem valor, para que assim possa executar. Com let não é possível fazer
 
+Await meio que já pega o then para e espera resolver a promise para continuar
+
